@@ -329,6 +329,7 @@ ns02.dns.lab.           3600    IN      A       192.168.50.11
 ;; MSG SIZE  rcvd: 127
 
 ```
+</details>
 
 ### Новая зона newdns.lab
 
