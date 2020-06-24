@@ -404,6 +404,7 @@ acl "view2" {
 <details>
 <summary> Далее, необходимо создать каждый view, группируя в них зоны </summary>
 В качестве примера участок named.conf с мастера
+
 ```
 view "view1" {
     match-clients { "view1"; };
@@ -496,6 +497,7 @@ view "view2" {
 <summary> ### Проверка </summary>
 
 На client
+
 ```
 [vagrant@client ~]$ host web1
 web1.dns.lab has address 192.168.50.15
@@ -509,6 +511,7 @@ www.newdns.lab has address 192.168.50.16
 ```
 
 На client2
+
 ```
 [vagrant@client2 ~]$ host web1
 web1.dns.lab has address 192.168.50.15
@@ -522,7 +525,9 @@ Host www not found: 3(NXDOMAIN)
 
 </details>
 
+
 ### \* Проверяю состояние selinux на всех хостах
+
 ```
 [vagrant@ns01 ~]$ getenforce
 Enforcing
